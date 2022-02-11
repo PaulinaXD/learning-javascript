@@ -22,4 +22,4 @@ console.log(age)
 
 // object
 
-console.log('live cum bucket')
+console.log('I am a cum bucket')
