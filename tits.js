@@ -45,12 +45,51 @@ console.log(penis)
 
 
 // array
-const myNames = []
-console.log(myNames.length)
-// const myNames = ['paulina', 'izabella', 'kazimierek', 23, true, false, 3.4, null]
+// const myNames = []
+// console.log(myNames.length)
+// const myNames = ['paulina', 'izabella', 'kazimierek', 23, true, false, 3.4, { }]
 // myNames[2] = 'oconnell'
-console.log(myNames)
+// console.log(myNames)
 
 // object
 
-console.log('I am a cum bucket')
+console.log('==============================================')
+const dog = {
+    name: 'gypsy',
+    age: 5,
+    breed: 'springer',
+    temperament: 'pissy'
+}
+
+const dogs = [
+    {
+        name: 'gypsy',
+        age: 5,
+        breed: 'springer',
+        temperament: 'pissy'
+    },
+    {
+        name: 'oggy',
+        age: 0,
+        breed: 'gsd',
+        temperament: 'best boi'
+    },
+    {
+        name: 'poopy',
+        age: 8,
+        breed: 'rottie',
+        temperament: 'fucking adorable'
+    }
+]
+
+const dogsWithUpper = dogs.map((dog) => ({
+    ...dog,
+    name: dog.name.toUpperCase(),
+    gay: true,
+}))
+console.log(dogsWithUpper)
+
+dogsWithUpper.forEach((dog) => console.log(`hello my name is ${dog.name} i am ${dog.age} i am a ${dog.temperament} ${dog.breed} Gay? ${dog.gay}`))
+
+
+// console.log(`hello my name is ${dog.name} i am ${dog.age} i am a ${dog.temperament} ${dog.breed}`)
